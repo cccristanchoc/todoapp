@@ -1,0 +1,28 @@
+<div>
+    <p>
+        hola mundo. mi pu vista. <%= Time.now %> <%= @nombre%>
+    </p>
+    
+    <% if @imprimir == true %>
+    
+    <p>
+        Esto solo se imprime si imprimir = True
+    </p>
+    
+    <% end %>
+    
+    <ul>
+        <li><%= @arrey[0] %></li>
+        <li><%= @arrey[1] %></li>
+        <li><%= @arrey[2] %></li>
+        <li><%= @arrey[3] %></li>
+        <li><%= @arrey[4] %></li>
+        
+        <p>hola test</p>
+        
+        <% @arrey.each do |item| %>
+        <li><%= item %></li>
+        <% end%>
+    </ul>
+    
+</div>
